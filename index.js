@@ -9,7 +9,7 @@ require("dotenv").config()
 const app = express()
 app.use(express.json())
 app.use(express.static("dist"));
-app.use(cors({ origin: "https://task-home.onrender.com", credentials: true }))
+app.use(cors({ origin: "https://task-home-1.onrender.com", credentials: true }))
 app.use(cookieParser())
 
 app.use("/api/auth", require("./routers/user.route"))
